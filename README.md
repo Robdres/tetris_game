@@ -2,7 +2,7 @@
 
 C++ Implementation of tetris game with some changes!
 
-![game](/,github/read_me.png)
+![Tetris Game](https://github.com/Robdres/tetris_game/blob/main/.github/read_me.png)
 
 ## Base repository
 
