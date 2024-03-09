@@ -92,7 +92,7 @@ void step( int (&grid)[WIDTH/S][HEIGHT/S], int (&piece)[3][3],int &state, std::p
     for(int line=0 ;line<WIDTH/S; line++){
         for(int column=0 ;column<HEIGHT/S; column++){
             DrawRectangle(line*S,column*S, S, S, get_color(grid[line][column]));
-            //DrawRectangleLines(line*S, column*S, S*3, S*3, ORANGE);
+            DrawText("Press q to pause the game",0,0,10,BLACK);
         }
     }
 
@@ -152,9 +152,7 @@ int main() {
             continue;
         }
             
-        if(counter%5==0){
-
-            counter=0;
+        if(counter++%5==0){
 
             auto aux_pos = post;
             if (IsKeyDown(KEY_RIGHT)){
